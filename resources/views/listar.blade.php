@@ -8,7 +8,6 @@
         <title>Sistema Web</title>
     </head>
     <body>
-        <section>
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -21,10 +20,10 @@
                                 <div class="collapse navbar-collapse" id="navbarNav">
                                     <ul class="navbar-nav">
                                         <li class="nav-item">
-                                             <a class="nav-link active" aria-current="page" href="#">Cadastrar</a>
+                                             <a class="nav-link active" aria-current="page" href="index.blade.php">Cadastrar</a>
                                         </li>
                                         <li class="nav-item">
-                                             <a class="nav-link disabled" aria-disabled="true">Consultar</a>
+                                        <a class="nav-link active" aria-current="page" href="listar.blade.php">Consultar</a>
                                         </li>
                                      </ul>
                                 </div>
@@ -38,25 +37,29 @@
                         <p class="mb-3">Sistema Utilizado para agendamento de serviços.</p>
                     </div>          
                 </div>
-                <div class="container text-center text-bg-primary mb-4">
-                    <div class="row">
-                        <div class="col">
-                             Nome
-                        </div>
-                        <div class="col">
-                             Telefone
-                        </div>
-                        <div class="col">
-                             Origem
-                        </div>
-                        <div class="col">
-                             Data de Contato
-                        </div>
-                        <div class="col">
-                             Observação
-                        </div>
-                     </div>
-                </div>
-       </section>
-    </body>
+                <table class="container text-center text-bg-primary mb-6 table-responsive">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Endereço</th>
+                            <th scope="col">Bairro</th>
+                            <th scope="col">CEP</th>
+                            <th scope="col">Cidade</th>
+                            <th scope="col">Estado</th>
+                            <th scope="col">Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                         <tr>
+                             <td>Larissa</td>
+                             <td>Rua X, N°123</td>
+                             <td>Jd.Cotinha</td>
+                             <td>03889100</td>
+                             <td>São Paulo</td>
+                             <td>São Paulo</td>
+                             <td>Nenhuma</td>
+                         </tr>
+                    </tbody>
+                </table>
+            </body>
 </html>

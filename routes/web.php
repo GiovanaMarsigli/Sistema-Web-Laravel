@@ -13,10 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/listar', function () {
+Route::get('/listar.blade.php', function () {
     return view('listar');
 });
 
-Route::get('/index', function () {
+Route::get('/index.blade.php', function () {
     return view('index');
 });
